@@ -1,20 +1,22 @@
 .book {
     transition: opacity 0.4s 0.2s;
   }
+
   .n_p{
-    margin-top: 8vw;
+    margin-top: 55px;
     text-align: center;
     font-size: 5vw;
     color: #000000;
   }
   .page {
-    width: 30vw;
-    height: 44vw;
+    width: 25vw;
+    height: 39vw;
     background-color: #111111;
     float: left;
     margin-bottom: 0.5em;
     background: left top no-repeat;
     background-size: cover;
+    border: #A9A9A9 solid 3px;
   }
   .page:nth-child(even) {
     clear: both;
@@ -23,8 +25,8 @@
     perspective: 250vw;
   }
   .book .pages {
-    width: 60vw;
-    height: 44vw;
+    width: 50vw;
+    height: 39vw;
     position: relative;
     transform-style: preserve-3d;
     backface-visibility: hidden;
@@ -37,8 +39,8 @@
     margin: 0;
     position: absolute;
     top: 0;
-    width: 30vw;
-    height: 44vw;
+    width: 25vw;
+    height: 39vw;
     transform-origin: 0 0;
     transition: transform 1.4s;
     backface-visibility: hidden;
@@ -117,7 +119,7 @@
  
   body {
     font-family: 'Lobster', cursive;
-    background-image: url("../template/bgr-all.png");
+    background-image: url("../template/tdtu.png");
     background-size: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
@@ -134,11 +136,12 @@
     background-position: right top;
   }
 #page1{
-    background-image: url('../template/bgr1.png');
+    background-image: url('../template/bg1.jpg');
 }  
 .n_p{
     color: rgb(230, 109, 127);
     font-size: 50px;
+    word-wrap: break-word; 
 }
 
 
@@ -146,7 +149,7 @@
     animation-duration: 1s;
     animation-fill-mode: both;
 }
-.cssanimation span { display: inline-block }
+.cssanimation span { display:inline-flexbox }
 
 .leRotateSkateInLeft span { animation-name: leRotateSkateInLeft }
 @keyframes leRotateSkateInLeft {
